@@ -68,7 +68,7 @@ class AllRecipes(object):
 
 	@staticmethod
 	def _get_name(soup):
-		return soup.find("h1", {"id": "article-heading_2-0"}).get_text().strip(' \t\n\r')
+		return soup.find("h1", {"class": "article-heading"}).get_text().strip(' \t\n\r')
 
 	@staticmethod
 	def _get_rating(soup):
